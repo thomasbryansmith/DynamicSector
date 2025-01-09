@@ -4,6 +4,11 @@
 DynamicSector provides a suite of functions that help construct dynamic star (sector) maps for science fiction roleplaying games.
 """
 
+def flatten(xss):
+    """Flattens a list of list into a list."""
+    return [x for xs in xss for x in xs]
+
+
 def random_yellow_hex(red_range=(210, 255), green_range=(210, 255)):
     """Generates a random hex color code that falls within the yellow range."""
 
@@ -51,13 +56,9 @@ def set_color_shape_image(type_vector):
     return {'color': color, 
             'shape': shape, 
             'image': image}
-        
     
+
     
-    
-    
-    
-        
 system_data['color'] = set_color_shape_image(system_data['type'])['color']
 system_data['shape'] = set_color_shape_image(system_data['type'])['shape']
 system_data['image'] = set_color_shape_image(system_data['type'])['image']
