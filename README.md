@@ -4,7 +4,7 @@
   style="width:50%;display: block; margin: auto;"
   alt="Dynamic Sector Logo"></h1>
 
-The DynamicSector python library is intended as a support module for science fiction or otherwise intergalactic roleplaying games. It takes topological 'network' data, presently in the form of vector attribute and edge list Pandas data frames, converts the data into a NetworkX object, and visualizes the results as either a 2D or 3D 'star map'. The resulting visualizations are navigable using a mouse and keyboard and includes tooltips describing each of the planets and stars - assuming the descriptions are provided.
+The DynamicSector python library and dashboard is intended as a support module for science fiction or otherwise intergalactic roleplaying games. It takes topological 'network' data, presently in the form of vector attribute and edge list Pandas data frames, converts the data into a NetworkX object, and visualizes the results as either a 2D or 3D 'star map'. The resulting visualizations are navigable using a mouse and keyboard and includes tooltips describing each of the planets and stars - assuming the descriptions are provided.
 
 <hr>
 
