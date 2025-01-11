@@ -11,7 +11,7 @@ The DynamicSector python library and dashboard are intended as a support module 
 Input data describing the astronomical objects in your system should adhere to the following data structure:  
 
 <img src="https://github.com/thomasbryansmith/DynamicSector/blob/main/assets/system_data_example.png?raw=true" 
-  style="width:75%;display: block; margin: auto;"
+  style="width:80%;display: block; margin: auto;"
   alt="Dynamic Sector Logo">
   
 + <i><b>label</b></i> indicates the name of the astronomical object.
@@ -27,7 +27,15 @@ Input data describing the astronomical objects in your system should adhere to t
 Input data describing the sector map (i.e., the traversible pathways between the astronomical objects) should adhere to an edge list structure:
 
 <img src="https://github.com/thomasbryansmith/DynamicSector/blob/main/assets/sector_map_example.png?raw=true" 
-  style="width:55%;display: block; margin: auto;"
+  style="width:50%;display: block; margin: auto;"
   alt="Dynamic Sector Logo">
+
++ <i><b>source</b></i> is the origin of travel between astronomical objects.
++ <i><b>target</b></i> is the destination of travel between astronomical objects.
+  + Currently, these are indistinguishable in the visualization and the network is considered undirected. This might be updated in future.
++ <i><b>weight</b></i> is the distance between the source and target in Astronomical Units.
+  + This metric is used to approximate distance when automatically generating a layout. 
++ <i><b>type</b></i> is the type of travel (currently accepting 'In-System', 'Unpredictable', and 'Regular').
+  + In-System connections ensure planets are drawn to their sun, but invisible in the visualization. 
   
 <hr>
