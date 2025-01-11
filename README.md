@@ -39,3 +39,7 @@ Input data describing the sector map (i.e., the traversible pathways between the
   + In-System connections ensure planets are drawn to their sun, but invisible in the visualization. 
   
 <hr>
+
+Provided the data are correctly formatted, you should produce a visualization similar in appearance to the following example:
+
+<hr>
