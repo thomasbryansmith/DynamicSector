@@ -1,2 +1,6 @@
 development_notebooks
 *.ipynb
+venv
+*.pyc
+.DS_Store
+.env
