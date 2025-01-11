@@ -41,6 +41,7 @@ Input data describing the sector map (i.e., the traversible pathways between the
 <hr>
 
 Provided the data are correctly formatted, you should produce a visualization similar in appearance to the following example:
+
 <img src="https://github.com/thomasbryansmith/DynamicSector/blob/main/assets/dashboard_prototype.png?raw=true" 
   style="width:100%;display: block; margin: auto;"
   alt="App Prototype">
