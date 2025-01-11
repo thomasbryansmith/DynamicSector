@@ -12,7 +12,7 @@ Input data describing the astronomical objects in your system should adhere to t
 
 <img src="https://github.com/thomasbryansmith/DynamicSector/blob/main/assets/system_data_example.png?raw=true" 
   style="width:90%;display: block; margin: auto;"
-  alt="Dynamic Sector Logo">
+  alt="System Data Structure">
   
 + <i><b>label</b></i> indicates the name of the astronomical object.
 + <i><b>type</b></i> encodes the type of astral body (and currently accepts 'Sun' or 'Planet').
@@ -28,7 +28,7 @@ Input data describing the sector map (i.e., the traversible pathways between the
 
 <img src="https://github.com/thomasbryansmith/DynamicSector/blob/main/assets/sector_map_example.png?raw=true" 
   style="width:50%;display: block; margin: auto;"
-  alt="Dynamic Sector Logo">
+  alt="Sector Map Data Structure">
 
 + <i><b>source</b></i> is the origin of travel between astronomical objects.
 + <i><b>target</b></i> is the destination of travel between astronomical objects.
@@ -41,5 +41,7 @@ Input data describing the sector map (i.e., the traversible pathways between the
 <hr>
 
 Provided the data are correctly formatted, you should produce a visualization similar in appearance to the following example:
-
+<img src="https://github.com/thomasbryansmith/DynamicSector/blob/main/assets/dashboard_prototype.png?raw=true" 
+  style="width:100%;display: block; margin: auto;"
+  alt="App Prototype">
 <hr>
