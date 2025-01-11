@@ -199,4 +199,4 @@ def update(system_data, sector_map):
 #---------------------------------------------------------------------------------------------
 
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server(debug=False)
