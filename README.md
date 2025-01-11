@@ -11,7 +11,7 @@ The DynamicSector python library and dashboard are intended as a support module 
 Input data describing the astronomical objects in your system should adhere to the following data structure:  
 
 <img src="https://github.com/thomasbryansmith/DynamicSector/blob/main/assets/system_data_example.png?raw=true" 
-  style="width:80%;display: block; margin: auto;"
+  style="width:90%;display: block; margin: auto;"
   alt="Dynamic Sector Logo">
   
 + <i><b>label</b></i> indicates the name of the astronomical object.
