@@ -23,7 +23,7 @@ def random_yellow_hex(red_range=(210, 255), green_range=(210, 255)):
     blue = random.randint(100, 255)
 
     # Format as hex code
-    return "#{red:02X}{green:02X}{blue:02X}".format(red, green, blue)
+    return "#{:02X}{:02X}{:02X}".format(red, green, blue)
 
 
 def random_earthy_hex(red_range=(150, 255), green_range=(150, 255), blue_range=(75, 255)):
@@ -305,7 +305,7 @@ def dynamic_sector_3d(system_data, sector_map):
                                              range=[min(y_nodes), max(y_nodes)]),
                                   zaxis=dict(visible=False,
                                              range=[min(z_nodes), max(z_nodes)])),
-                       paper_bgcolor='rgba(0,0,0)',
+                       paper_bgcolor='rgba(0,0,0,0)',
                        plot_bgcolor='rgba(0,0,0,0)')
     
     fig = go.Figure(data=[edge_trace, node_trace], layout=layout)
@@ -315,24 +315,10 @@ def dynamic_sector_3d(system_data, sector_map):
     fig.update_layout(autosize=True,
                       width=None,
                       height=None,
+                      margin=dict(l=0,r=0,t=0,b=0),
                       hoverlabel=dict(bgcolor="#000d03",
                                       font_size=16,
                                       font_family="Courier New"))
     
     # Convert plotly graph object to html and return html object
-    html_string = fig.to_html(full_html=False)
-    
-    html_template = """
-    <!DOCTYPE html>
-    <html>
-    <head>
-    <title>Nyxal's Reach</title>
-    </head>
-    <body style="background-color:black;">
-    <div style="display: flex; justify-content: center;">
-        {plot_div}
-    </div>
-    </body>
-    </html>
-    """
-    return html_template.format(plot_div=html_string)
+    return fig
