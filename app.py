@@ -22,6 +22,7 @@ import dynamicsector as ds
 app = dash.Dash(__name__,
                 external_stylesheets=[dbc.themes.BOOTSTRAP],
                 suppress_callback_exceptions=True)
+server = app.server
 
 # Define wrapper
 app.layout = html.Div(style={'borderTop': '5px solid #728896',
@@ -197,8 +198,6 @@ def update(system_data, sector_map):
 #---------------------------------------------------------------------------------------------
 # Compile App
 #---------------------------------------------------------------------------------------------
-
-server = app.server
 
 if __name__ == '__main__':
     app.run_server(debug=True)
