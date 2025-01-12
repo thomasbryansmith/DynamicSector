@@ -138,7 +138,7 @@ def read_and_check_upload(contents, filename):
                       style={'color': 'rgba(255,255,255,0.7)',
                              'font-size': '0.8vw',
                              'text-align': 'center'})
-    return children, df.to_json()
+    return {'child': children, 'data': df.to_json()}
 
 #---------------------------------------------------------------------------------------------
 # Callbacks
@@ -150,7 +150,7 @@ def read_and_check_upload(contents, filename):
     State('upload_system_data', 'filename'))
 def system_data_store(contents, filename):
     if contents is not None:
-        data = read_and_check_upload(contents, filename)[1]
+        data = read_and_check_upload(contents, filename)['data']
         return data
     
 @app.callback(
@@ -159,7 +159,7 @@ def system_data_store(contents, filename):
     State('upload_sector_map', 'filename'))
 def sector_map_store(contents, filename):
     if contents is not None:
-        data = read_and_check_upload(contents, filename)[1]
+        data = read_and_check_upload(contents, filename)['data']
         return data
     
 @app.callback(
@@ -168,7 +168,7 @@ def sector_map_store(contents, filename):
     State('upload_system_data', 'filename'))
 def stored_system_data(contents, filename):
     if contents is not None:
-        return read_and_check_upload(contents, filename)[0]
+        return read_and_check_upload(contents, filename)['child']
     
 @app.callback(
     Output('stored_sector_map', 'children'),
@@ -176,7 +176,7 @@ def stored_system_data(contents, filename):
     State('upload_sector_map', 'filename'))
 def stored_sector_map(contents, filename):
     if contents is not None:
-        return read_and_check_upload(contents, filename)[0]
+        return read_and_check_upload(contents, filename)['child']
     
 @app.callback(
     Output('output_display', 'children'),
@@ -201,4 +201,4 @@ def update(system_data, sector_map):
 server = app.server
 
 if __name__ == '__main__':
-    app.run_server(debug=False)
+    app.run_server(debug=True)
