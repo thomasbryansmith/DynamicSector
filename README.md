@@ -1,6 +1,6 @@
 <hr>
 <body>
-<h1><img src="https://github.com/thomasbryansmith/DynamicSector/blob/main/assets/logo_white.png?raw=true" 
+<h1><img src="https://github.com/thomasbryansmith/DynamicSector/blob/main/src/assets/logo_white.png?raw=true" 
   style="width:50%;display: block; margin: auto;"
   alt="Dynamic Sector Logo"></h1>
 
@@ -12,7 +12,7 @@ I mainly built this for personal use, but I figure it could be a nice little too
 
 Input data describing the astronomical objects in your system should adhere to the following data structure:  
 
-<img src="https://github.com/thomasbryansmith/DynamicSector/blob/main/assets/system_data_example.png?raw=true" 
+<img src="https://github.com/thomasbryansmith/DynamicSector/blob/main/src/assets/system_data_example.png?raw=true" 
   style="width:90%;display: block; margin: auto;"
   alt="System Data Structure">
   
@@ -28,7 +28,7 @@ Input data describing the astronomical objects in your system should adhere to t
 
 Input data describing the sector map (i.e., the traversible pathways between the astronomical objects) should adhere to an edge list structure:
 
-<img src="https://github.com/thomasbryansmith/DynamicSector/blob/main/assets/sector_map_example.png?raw=true" 
+<img src="https://github.com/thomasbryansmith/DynamicSector/blob/main/src/assets/sector_map_example.png?raw=true" 
   style="width:50%;display: block; margin: auto;"
   alt="Sector Map Data Structure">
 
@@ -44,7 +44,7 @@ Input data describing the sector map (i.e., the traversible pathways between the
 
 Provided the data are correctly formatted, you should produce a visualization similar in appearance to the following example:
 
-<img src="https://github.com/thomasbryansmith/DynamicSector/blob/main/assets/dashboard_prototype.png?raw=true" 
+<img src="https://github.com/thomasbryansmith/DynamicSector/blob/main/src/assets/dashboard_prototype.png?raw=true" 
   style="width:100%;display: block; margin: auto;"
   alt="App Prototype">
 <hr>
