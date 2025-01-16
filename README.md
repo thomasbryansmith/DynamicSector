@@ -8,7 +8,7 @@ The DynamicSector python library and dashboard are intended as a support module 
 
 I mainly built this for personal use, but I figure it could be a nice little tool for the other sci-fi Wardens and Game Masters out there.
 
-Hosted <a target="_blank" rel="noopener noreferrer" href="https://dynamicsector.onrender.com">here</a> under Render's Hobbyist plan.
+Hosted <a href="https://dynamicsector.onrender.com" target="_blank" rel="noopener noreferrer">here</a> under Render's Hobbyist plan.
 <hr>
 
 Input data describing the astronomical objects in your system should adhere to the following data structure:  
